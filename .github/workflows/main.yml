@@ -32,9 +32,9 @@ jobs:
           npm run generate-key
           npm run build
       - name: Add and commit
-      - uses: EndBug/add-and-commit@v6.2.0
+        uses: EndBug/add-and-commit@v6.2.0
         with:
           # Arguments for the git add command
-          add: -A
+          add: '*'
           # The message for the commit
           message: "new build"
