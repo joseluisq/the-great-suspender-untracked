@@ -1,53 +1,49 @@
-# The Great Suspender - Without Analytics Tracking
+# The Great Suspender Untracked
 
-Modified version of "The Great Suspender" to remove analytics tracking and rogue .js files from anonymous developer who is now in control of the GitHub source & web store versions.
+> Another fork of "The Great Suspender" which removes analytics tracking and rogue .js files.
 
-Read more:
+**Disclaimer**
 
-[New ownership announcement](https://github.com/greatsuspender/thegreatsuspender/issues/1175)
+This repository is a fork for *my own usage* taken from [v7.1.8 of The Great Suspender](https://github.com/greatsuspender/thegreatsuspender) with all tracking code removed along with some annoying popups/prompts. <br>
+I have no plans to maintain this repo so please feel free to fork it if you want.
 
-[New maintainer is probably malicious](https://github.com/greatsuspender/thegreatsuspender/issues/1263)
+## The history
 
-[Flagged as malware by Microsoft Edge](https://www.windowscentral.com/great-suspender-extension-now-flagged-malware-edge-has-built-replacement)
+- [New ownership announcement](https://github.com/greatsuspender/thegreatsuspender/issues/1175)
+- [New maintainer is probably malicious](https://github.com/greatsuspender/thegreatsuspender/issues/1263)
+- [Flagged as malware by Microsoft Edge](https://www.windowscentral.com/great-suspender-extension-now-flagged-malware-edge-has-built-replacement)
+- [Reddit forum discussion](https://old.reddit.com/r/HobbyDrama/comments/jouwq7/open_source_development_the_great_suspender_saga/)
+- [Medium Article](https://medium.com/nerd-for-tech/malware-in-browser-extensions-3805e8763dd5)
+- [The Great Suspender pulled from Chrome after being flagged as malware (February 2021)](https://www.windowscentral.com/great-suspender-gets-pulled-chrome-web-store)
 
-[Reddit forum discussion](https://old.reddit.com/r/HobbyDrama/comments/jouwq7/open_source_development_the_great_suspender_saga/)
-
-[Medium Article](https://medium.com/nerd-for-tech/malware-in-browser-extensions-3805e8763dd5)
-
-This project is a fork from [v7.1.8 of The Great Suspender](https://github.com/greatsuspender/thegreatsuspender) with all tracking code removed, along with some annoying popups/prompts.
-
-This work carries no guarantees only to the best of my ability in 2 hours using notepad2 & AstroGrep. I am not a developer and do not intend to spend much time keeping this extension updated.
-
-<img src="/src/img/suspendy-guy.png" width="100px" />
+<img src="img/suspendy-guy.png" width="100px" />
 
 "The Great Suspender" is a free and open-source Google Chrome extension for people who find that chrome is consuming too much system resource or suffer from frequent chrome crashing. Once installed and enabled, this extension will automatically *suspend* tabs that have not been used for a while, freeing up memory and cpu that the tab was consuming.
-
-If you have suggestions or problems using the extension, please [submit a pull request](https://github.com/aciidic/thegreatsuspender/issues/). 
 
 **If you have lost tabs from your browser:** The original developer has written a guide for how to recover your lost tabs [here](https://github.com/deanoemcke/thegreatsuspender/issues/526
 ).
 
-### Chrome Web Store
+## Chrome Web Store
 
-This version of The Great Suspender is not available on the Chrome Web Store.
+The original "Great Suspender Extension" was flagged and this fork is not available on the Chrome Web Store (install instruction below).
 
+## Manual extension installing
 
-### You should install this extension from source
-
-1. Download the **[latest available version](https://github.com/aciidic/thegreatsuspender/releases)** and unarchive to your preferred location (whichever suits you).
-2. Using **Google Chrome** browser, navigate to chrome://extensions/ and enable "Developer mode" in the upper right corner.
-3. Click on "Load Unpacked" in top-left corner and select the src FOLDER from extracted data > click Open Folder
-  (Or you can try drag & drop the src folder in to your chrome://extensions window)
-4. Confirm The Great Suspender now appears in chrome://extensions AND in your chrome://policy
+1. Download the **[latest Zip file](https://github.com/joseluisq/thegreatsuspender-untracked/releases)** and unarchive to your preferred location (whichever suits you).
+2. Using **Google Chrome** browser, navigate to `chrome://extensions` and enable **"Developer mode"** in the upper right corner.
+3. Click on **"Load Unpacked"** in top-left corner and select the src FOLDER from extracted data > click Open Folder
+  (Or you can try drag & drop the src folder in to your *chrome://extensions* window)
+4. Confirm The Great Suspender now appears in *chrome://extensions* AND in your *chrome://policy*
 
 If you have completed the above steps, the "welcome" page will open indicating successful installation of the extension.
 
 Be sure to unsuspend all suspended tabs before removing any other version of the extension or they will disappear forever!
 
+----
 
 ### Enterprise/Windows Domain installation of extension .crx via Group Policy
 
-1. Get extension .crx following steps above or download from [releases](https://github.com/aciidic/thegreatsuspender-notrack/releases)
+1. Get extension .crx following steps above or download from [releases](https://github.com/aciidic/thegreatsuspender-untracked/releases)
 2. Install Chrome admx/adml templates [from Google](https://support.google.com/chrome/a/answer/187202?hl=en) on a domain controller
 3. Create new file `Update.xml` on network filestore or similar, and enable read permissions for all relevent domain users/groups
 4. Populate `Update.xml` with code below
